@@ -1,7 +1,7 @@
 <<include=FALSE>>=
 require(mosaic)
 @
-
+ 
 Several different models were made of wage (\$/hour) as a function of sex and marital status.
 
 Here's one model's coefficient, fitted to the \texttt{CPS85} data:

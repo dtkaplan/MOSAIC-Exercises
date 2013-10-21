@@ -10,4 +10,4 @@ For each, indicate whether the statistic indicates something about variation in 
 \item \robustOrNot{IQR}
 \item \robustOrNot{standard deviation}
 \item \robustOrNot{variance}
-\end{enumerate}
+\end{enumerate} 

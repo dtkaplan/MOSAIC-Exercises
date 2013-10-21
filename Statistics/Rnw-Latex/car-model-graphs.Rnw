@@ -6,7 +6,7 @@ opts_chunk$set(dev="pdf",fig.height=3,fig.width=4,out.width=".4\\columnwidth")
 <<include=FALSE>>=
 cars <- fetchData("used-hondas.csv")
 @
-
+ 
 \providecommand{\myTilde}{$\sim$}
 
 Here are several graphs for used-car prices, mileage, and age.  The actual cases are shown by x, the model values either as lines or solid dots.

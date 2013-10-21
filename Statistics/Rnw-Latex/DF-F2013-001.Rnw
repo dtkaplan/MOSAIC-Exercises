@@ -7,7 +7,7 @@ Data on 500 adults, including weight (kg), height (cm), waist size (cm), and sex
 5&168&55&70&F\\ 
 \multicolumn{5}{c}{... and so on.}\\
 \end{tabular} \end{center}
-
+ 
 \noindent A model was fitted to this data with the following model design:
 <<eval=FALSE>>=
 mod1 = lm(weight ~ height*sex, data=body)

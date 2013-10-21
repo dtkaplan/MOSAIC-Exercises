@@ -4,7 +4,7 @@
 \pagestyle{empty}
 \usepackage{multicol}
 \columnseprule=0.4pt
-
+ 
 % For the package
 \newcommand{\WritingSpace}[2]{\vspace*{\WritingSpaceScaling#1#2}} 
 % e.g. \WritingSpace{2cm}

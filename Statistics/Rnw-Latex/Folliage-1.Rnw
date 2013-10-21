@@ -1,4 +1,4 @@
-You are working for the Fall Foliage study group at Deciduous University.  DecidU has assembled a large catalog of historical records of the duration and intensity of the fall color season.  It looks like this:
+ You are working for the Fall Foliage study group at Deciduous University.  DecidU has assembled a large catalog of historical records of the duration and intensity of the fall color season.  It looks like this:
 
 \medskip
 \centerline{\begin{tabular}{l|rrrr}
