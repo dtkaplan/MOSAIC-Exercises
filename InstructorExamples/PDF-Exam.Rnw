@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage[top=.5in,bottom=.5in,left=1.5in,right=1.5in]{geometry}
+\usepackage{rotating}
+\pagestyle{empty}
+\usepackage{multicol}
+\columnseprule=0.4pt
+
+% For the package
+\newcommand{\WritingSpace}[2]{\vspace*{\WritingSpaceScaling#1#2}} 
+% e.g. \WritingSpace{2cm}
+\newcommand{\WritingSpaceScaling}{1}
+% For universal scaling
+
+
+\begin{document}
+
+Comment: This is an example document in an examination format.
+
+To use this document:
+\begin{itemize}
+\item Save the file as \texttt{Rnw} to your own document space, renaming as appropriate for your purposes or workflow.
+\item Delete these comments.
+\item Edit the names of the problems to refer to the ones you want to include on your exam.  You can, of course, add or delete problems or change the \LaTeX~formatting of the problems.  You can also include your own problems by referring to names of files in your own repository.
+\item Use \texttt{knitr} in R to compile this document to PDF format.
+\end{itemize}
+
+
+\hfill\parbox{3.5in}{\raggedleft Student Name: \rule{2in}{1pt}  }
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\begin{centering}
+{\Large \sffamily Math 155 --- Intro. to Statistical Modeling --- Prof. Kaplan}\\
+\bigskip
+
+{\Large \sffamily \bfseries{Mid-Term Exam: Fall 2013}}\\
+\bigskip
+\end{centering}
+
+
+\paragraph{Problem 1.} \Sexpr{knit_child('Variation-201.Rnw')}
+
+\paragraph{Problem 2.} \Sexpr{knit_child('DF-F2013-002.Rnw')}
+
+\paragraph{Problem 3.} \Sexpr{knit_child('DF-F2013-001.Rnw')}
+
+\newpage
+
+\paragraph{Problem 4.} \Sexpr{knit_child('car-model-graphs.Rnw')}
+
+\newpage
+
+\paragraph{Problem 5.} \Sexpr{knit_child("Folliage-1.Rnw")}
+
+
+\end{document}
+
+

@@ -1,0 +1,52 @@
+Data on 500 adults, including weight (kg), height (cm), waist size (cm), and sex.    Here are the first five cases from a dataframe named \texttt{body}:
+\begin{center}\begin{tabular}{ccccc} case&height& weight&waist&sex\\
+1&178&72&87&M \\
+2&166&91&109&F\\
+3&174&80&95&F \\
+4&180&79&93&M \\
+5&168&55&70&F\\ 
+\multicolumn{5}{c}{... and so on.}\\
+\end{tabular} \end{center}
+
+\noindent A model was fitted to this data with the following model design:
+<<eval=FALSE>>=
+mod1 = lm(weight ~ height*sex, data=body)
+@
+
+\begin{enumerate}
+\item Here are names of various model vectors from \texttt{mod1}.
+Beneath each name, write the first  five values of the corresponding explanatory vector.
+\begin{center}\begin{tabular}{c||c|c|c|c|c}
+\begin{turn}{60}case\end{turn}& 
+\begin{turn}{60}Intercept~~\end{turn}& 
+\begin{turn}{60}height~~~~~~\end{turn}&
+\begin{turn}{60}sexM~~~~~~~~\end{turn}&
+\begin{turn}{60}height:sexM\end{turn}\\\hline
+ & & & & & \\
+1 & & & & & \\ 
+ & & & & & \\
+2  & & & & & \\ 
+ & & & & & \\
+3  & & & & & \\ 
+ & & & & & \\
+4  & & & & & \\
+ & & & & & \\
+5  & & & & & \end{tabular}\end{center}
+
+
+
+\item The coefficients found from fitting the model were 
+\begin{center}\begin{tabular}{cccccc} Intercept& height&sexM&height:sexM\\
+-1.6 & 0.37 & 3.6 & 0.20
+\end{tabular}\end{center}
+Find: 
+\begin{enumerate}
+\item the model weight of the person in case~1 (Include units.  Write a numerical formula, but it is not necessary to simplify the answer.)
+
+\vskip 1cm
+\item the model weight of the person in case~2 (Include units.  Write a numerical formula, but it is not necessary to simplify the answer.)
+
+\vskip 1cm 
+\end{enumerate}
+\item  The coefficient height:sexM is positive, not negative or zero. What does this tell you about the relation between height and weight for the people in the database?  
+\end{enumerate}

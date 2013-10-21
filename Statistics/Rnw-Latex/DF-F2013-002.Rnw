@@ -1,0 +1,49 @@
+<<include=FALSE>>=
+require(mosaic)
+@
+
+Several different models were made of wage (\$/hour) as a function of sex and marital status.
+
+Here's one model's coefficient, fitted to the \texttt{CPS85} data:
+<<echo=FALSE>>=
+coef(lm( wage~sex*married, data=CPS85))
+@
+    
+\begin{enumerate}
+\item Fill in the model values for the wages for workers in each category: 
+    
+
+\begin{tabular}{c|c|c|}
+\multicolumn{3}{c}{Model Values}\\
+& Married & Single \\\hline
+&&  \\ 
+M &&  \\  \hline
+&&  \\
+F &&  \\ \hline
+\end{tabular} 
+
+\noindent Model design: wage $\sim$ sex * married
+
+    
+\item Here's a table of model values from a possibly different model design fitted to other data.  Write down the model design.
+
+\begin{tabular}{c|c|c|}
+  & Married & Single \\\hline
+M & 10.25   & 9.12  \\\hline
+F & 10.25   &  9.12\\\hline
+\end{tabular}  
+
+\noindent Model design: 
+
+\item Here's another such table.  Write down the model design.
+
+\begin{tabular}{c|c|c|}
+  & Married & Single \\\hline
+M & 11.00   & 10.00  \\\hline
+F & 10.50   & 9.50\\\hline
+\end{tabular}  
+
+\noindent Model design:   
+
+\end{enumerate}
+

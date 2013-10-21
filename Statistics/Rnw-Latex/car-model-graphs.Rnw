@@ -1,0 +1,88 @@
+<<include=FALSE>>=
+require(mosaic)
+opts_chunk$set(dev="pdf",fig.height=3,fig.width=4,out.width=".4\\columnwidth")
+@
+
+<<include=FALSE>>=
+cars <- fetchData("used-hondas.csv")
+@
+
+\providecommand{\myTilde}{$\sim$}
+
+Here are several graphs for used-car prices, mileage, and age.  The actual cases are shown by x, the model values either as lines or solid dots.
+
+\begin{tabular}{c|c}
+<<echo=FALSE>>=
+f <- makeFun(lm( Price ~ Mileage, data=cars ))
+plotFun( f(Mileage=Mileage) ~ Age+Mileage, 
+         Age.lim=c(0,12),
+         Mileage.lim=c(0,200000),filled=FALSE )
+plotPoints( Mileage ~  Age, data=cars,pch=4,cex=.5,add=TRUE)
+@
+&
+<<echo=FALSE>>=
+plotPoints( Price ~ Mileage, data=cars,pch=4,cex=.5)
+f <- makeFun(lm( Price ~ Mileage + Age, data=cars ))
+plotFun( f(Mileage=Mileage,Age=2) ~ Mileage, data=cars, add=TRUE )
+plotFun( f(Mileage=Mileage,Age=4) ~ Mileage, data=cars, add=TRUE )
+plotFun( f(Mileage=Mileage,Age=6) ~ Mileage, data=cars, add=TRUE )
+plotFun( f(Mileage=Mileage,Age=8) ~ Mileage, data=cars, add=TRUE )
+@
+\\\hline
+<<echo=FALSE>>=
+plotPoints( Price ~  Age, data=cars,pch=4,cex=.5,col=rgb(0,0,1,.3))
+mod <- lm( Price ~ Mileage, data=cars )
+plotPoints( fitted(mod) ~ Age, data=cars, add=TRUE,pch=20 )
+@
+&
+<<echo=FALSE>>=
+f <- makeFun(lm( Price ~ Mileage+Age, data=cars ))
+plotFun( f(Age=Age,Mileage=Mileage) ~ Age+Mileage, 
+         Age.lim=c(0,12),
+         Mileage.lim=c(0,200000),filled=FALSE )
+plotPoints( Mileage ~  Age, data=cars,pch=4,cex=.5,add=TRUE)
+@
+\\\hline
+<<echo=FALSE>>=
+plotPoints( Price ~ Mileage, data=cars,pch=4,cex=.5)
+f <- makeFun(lm( Price ~ Mileage * Age, data=cars ))
+plotFun( f(Mileage=Mileage,Age=2) ~ Mileage, data=cars, add=TRUE )
+plotFun( f(Mileage=Mileage,Age=4) ~ Mileage, data=cars, add=TRUE )
+plotFun( f(Mileage=Mileage,Age=6) ~ Mileage, data=cars, add=TRUE )
+plotFun( f(Mileage=Mileage,Age=8) ~ Mileage, data=cars, add=TRUE )
+@
+&
+<<echo=FALSE>>=
+plotPoints( Price ~ Age, data=cars,pch=4,cex=.5)
+f <- makeFun(lm( Price ~ Mileage * Age, data=cars ))
+plotFun( f(Mileage=10000,Age=Age) ~ Age, data=cars, add=TRUE )
+plotFun( f(Mileage=30000,Age=Age) ~ Age, data=cars, add=TRUE )
+plotFun( f(Mileage=50000,Age=Age) ~ Age, data=cars, add=TRUE )
+plotFun( f(Mileage=70000,Age=Age) ~ Age, data=cars, add=TRUE )
+@
+\\\hline
+<<echo=FALSE>>=
+f <- makeFun(lm( Price ~ Mileage*Age, data=cars ))
+plotFun( f(Age=Age,Mileage=Mileage) ~ Age+Mileage, 
+         Age.lim=c(0,12),
+         Mileage.lim=c(0,200000),filled=FALSE )
+plotPoints( Mileage ~  Age, data=cars,pch=4,cex=.75,add=TRUE)
+@
+&
+<<echo=FALSE>>=
+plotPoints( Price ~  Mileage, data=cars,pch=4,cex=.5,col=rgb(0,0,1,.3))
+mod <- lm( Price ~ Age, data=cars )
+plotPoints( fitted(mod) ~ Mileage, data=cars, add=TRUE,pch=20 )
+@
+\\
+\end{tabular}
+\medskip
+
+\noindent Alongside each graph, write down the model design that corresponds to the model values.  You can choose from among these models.
+
+\medskip
+
+\centerline{\begin{tabular}{ccc}
+Price~\myTilde~Mileage & Price~\myTilde~Age & Price~\myTilde~Age+Mileage \\\ 
+Price~\myTilde~Age*Mileage & Mileage~\myTilde~Price & Price~\myTilde~1 \\\  
+\end{tabular}}

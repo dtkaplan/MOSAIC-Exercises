@@ -1,0 +1,64 @@
+You are working for the Fall Foliage study group at Deciduous University.  DecidU has assembled a large catalog of historical records of the duration and intensity of the fall color season.  It looks like this:
+
+\medskip
+\centerline{\begin{tabular}{l|rrrr}
+Year & Intensity & Duration & Rainfall & Temperature\\\hline
+1962 & 5 & 15 & 3.6 & 50\\
+1963 & 2 & 22 & 1.2 & 56\\
+1964 & 1 & 12 & 5.8 & 38\\
+\multicolumn{5}{c}{... and so on up to the present.}\\
+\end{tabular}}
+\medskip
+
+Intensity is on a scale of 0 to 5 with 5 meaning``great beauty" and 0 meaning, ``Blah, Let's move to Florida."
+Duration is the length of the season from 80\% of peak leaf cover to 10\%.
+Rainfall is in inches of rain in August and September.
+Temperature is the lowest early morning temperature in August.
+
+
+Your job is to build statistical models that can help to answer researchers' questions based on the data in the catalog.
+
+Here are several models:
+
+\begin{enumerate}
+\item Intensity \verb+~+ Year
+\item Intensity \verb+~+ Rainfall
+\item Intensity \verb+~+ Rainfall * Temperature
+\item Intensity \verb+~+ Rainfall + Year + Temperature
+\end{enumerate}
+
+These are some of the research questions posed by your colleagues.  For each question, circle the model forms that are potentially useful.  If there is are model forms that are useless in answering the research question question, draw an X through it.
+
+\begin{itemize}
+
+\item Does the Intensity of the folliage season depend on Rainfall?
+
+mod1  mod2  mod3  mod4  
+
+\item Has the Intensity of the season lessened over the years (perhaps due to global warming)?
+
+mod1  mod2  mod3  mod4  
+
+\item Has the Intensity of the season lessened systematically over the years, even adjusting for the effects of Temperature.
+
+mod1  mod2  mod3  mod4 
+
+\item Has the Intensity peaked in the 1980s and is now declining?
+
+mod1  mod2  mod3  mod4  
+
+\item Is it Rainfall or Temperature that has the largest effect on Intensity?
+
+mod1  mod2  mod3  mod4  
+
+\item Does the effect of Rainfall on Intensity depend on the Temperature?
+
+mod1  mod2  mod3  mod4  
+
+\item Does the effect of Temperature on Intensity depend on Rainfall?
+
+mod1  mod2  mod3  mod4  
+
+
+\end{itemize}
+
