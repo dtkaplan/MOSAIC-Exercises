@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage{rotating}
+\title{Statistics Problems}
+\author{Project MOSAIC Exercises}\date{\today}
+\begin{document}
+\maketitle
+\newpage\
+\paragraph{Problem 1 }
+\Sexpr{knit_child(text=readLines('Rnw-Latex/car-model-graphs.Rnw'))}
+
+\medskip
+\subparagraph{Problem Info:}
+\begin{itemize}
+\item Argument to \texttt{\\}\texttt{Sexpr} \tiny{\texttt{\{knit\_child(text='http://dtkaplan.github.io/MOSAIC-Exercises/Statistics/Rnw-Latex/car-model-graphs.Rnw')\}}}
+
+\end{itemize}
+
+\newpage
+\paragraph{Problem 2 }
+\Sexpr{knit_child(text=readLines('Rnw-Latex/DF-F2013-001.Rnw'))}
+
+\medskip
+\subparagraph{Problem Info:}
+\begin{itemize}
+\item Argument to \texttt{\\}\texttt{Sexpr} \tiny{\texttt{\{knit\_child(text='http://dtkaplan.github.io/MOSAIC-Exercises/Statistics/Rnw-Latex/DF-F2013-001.Rnw')\}}}
+
+\end{itemize}
+
+\newpage
+\paragraph{Problem 3 }
+\Sexpr{knit_child(text=readLines('Rnw-Latex/DF-F2013-002.Rnw'))}
+
+\medskip
+\subparagraph{Problem Info:}
+\begin{itemize}
+\item Argument to \texttt{\\}\texttt{Sexpr} \tiny{\texttt{\{knit\_child(text='http://dtkaplan.github.io/MOSAIC-Exercises/Statistics/Rnw-Latex/DF-F2013-002.Rnw')\}}}
+
+\end{itemize}
+
+\newpage
+\paragraph{Problem 4 }
+\Sexpr{knit_child(text=readLines('Rnw-Latex/Folliage-1.Rnw'))}
+
+\medskip
+\subparagraph{Problem Info:}
+\begin{itemize}
+\item Argument to \texttt{\\}\texttt{Sexpr} \tiny{\texttt{\{knit\_child(text='http://dtkaplan.github.io/MOSAIC-Exercises/Statistics/Rnw-Latex/Folliage-1.Rnw')\}}}
+
+\end{itemize}
+
+\newpage
+\paragraph{Problem 5 }
+\Sexpr{knit_child(text=readLines('Rnw-Latex/variation-201.Rnw'))}
+
+\medskip
+\subparagraph{Problem Info:}
+\begin{itemize}
+\item Argument to \texttt{\\}\texttt{Sexpr} \tiny{\texttt{\{knit\_child(text='http://dtkaplan.github.io/MOSAIC-Exercises/Statistics/Rnw-Latex/variation-201.Rnw')\}}}
+
+\end{itemize}
+
+\newpage
+\end{document}
+

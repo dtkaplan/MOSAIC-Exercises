@@ -1,0 +1,5 @@
+*.tex
+*.log
+*.synctex.gz
+figure
+framed.sty
