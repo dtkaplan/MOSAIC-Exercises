@@ -1,0 +1,13 @@
+Here are several different statistics that can be calculated on a quantitative variable.
+
+For each, indicate whether the statistic indicates something about variation in the variable, and whether or not the statistic is robust to outliers.
+
+\providecommand{\robustOrNot}[1]{\makebox[1.5in][l]{#1}\framebox{~variation: yes or no~}~\framebox{~robust: yes or no~}}
+
+\begin{enumerate}
+\item \robustOrNot{mean}
+\item \robustOrNot{median}
+\item \robustOrNot{IQR}
+\item \robustOrNot{standard deviation}
+\item \robustOrNot{variance}
+\end{enumerate}
