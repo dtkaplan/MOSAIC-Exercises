@@ -86,3 +86,5 @@ plotPoints( fitted(mod) ~ Mileage, data=cars, add=TRUE,pch=20 )
 Price~\myTilde~Mileage & Price~\myTilde~Age & Price~\myTilde~Age+Mileage \\\ 
 Price~\myTilde~Age*Mileage & Mileage~\myTilde~Price & Price~\myTilde~1 \\\  
 \end{tabular}}
+\medskip
+Hint: All the models you need are found among these six, but some of the six may be unrelated to the graphs.  

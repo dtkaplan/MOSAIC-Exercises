@@ -41,20 +41,24 @@ To use this document:
 \bigskip
 \end{centering}
 
+<<include=FALSE>>=
+require(RCurl)
+@
 
-\paragraph{Problem 1.} \Sexpr{knit_child('Variation-201.Rnw')}
+\paragraph{Problem 1.} 
+\Sexpr{knit_child(text=getURL('http://dtkaplan.github.io/MOSAIC-Exercises/Statistics/Rnw-Latex/variation-201.Rnw'))}
 
-\paragraph{Problem 2.} \Sexpr{knit_child('DF-F2013-002.Rnw')}
+\paragraph{Problem 2.} 
+\Sexpr{knit_child(text=getURL('http://dtkaplan.github.io/MOSAIC-Exercises/Statistics/Rnw-Latex/DF-F2013-001.Rnw'))}
 
-\paragraph{Problem 3.} \Sexpr{knit_child('DF-F2013-001.Rnw')}
+\paragraph{Problem 3.} 
+\Sexpr{knit_child(text=getURL('http://dtkaplan.github.io/MOSAIC-Exercises/Statistics/Rnw-Latex/DF-F2013-002.Rnw'))}
 
-\newpage
+\paragraph{Problem 4.} 
+\Sexpr{knit_child(text=getURL('http://dtkaplan.github.io/MOSAIC-Exercises/Statistics/Rnw-Latex/Folliage-1.Rnw'))}
 
-\paragraph{Problem 4.} \Sexpr{knit_child('car-model-graphs.Rnw')}
-
-\newpage
-
-\paragraph{Problem 5.} \Sexpr{knit_child("Folliage-1.Rnw")}
+\paragraph{Problem 5.} 
+\Sexpr{knit_child(text=getURL('http://dtkaplan.github.io/MOSAIC-Exercises/Statistics/Rnw-Latex/car-model-graphs.Rnw'))}
 
 
 \end{document}
