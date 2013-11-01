@@ -1,0 +1,39 @@
+We've examined several widely used families of probability models:
+
+\begin{itemize}
+\item Uniform
+\item Normal
+\item Poisson
+\item Binomial
+\item Exponential
+\end{itemize}
+
+Next to each of the names above, write down the following information:
+
+1) \framebox{Continuous} or \framebox{Discrete} to indicate whether the sample space for the probability model includes numbers like 3.5 or only includes integers (e.g. 10, 11, 12).
+
+2) Here are a few settings, each identified by a letter.  Write down the letter next to the distribution name to which it corresponds.  Some of the settings may not correspond to any of these distributions. Some distributions may correspond to more than one setting.
+
+\begin{enumerate}[(A)]
+
+\item In a random sample of $n$ people, the number who were born in November.
+
+\item Each possible outcome is equally likely.
+
+\item Of the people who come to your ticket booth at a movie theater on Saturday night, the number who were born in November.
+
+\item People are arriving randomly and independently at the health center.  Every 5th person is sent to your desk.  What is the time interval between when successive people arriving at your desk?
+
+\item Defects occur at random locations along a cable.  What are the distances between defects?
+
+\item Defects occur at random locations along a cable (again!).  How many defects are there in a mile of cable?
+
+\item Many random numbers are multiplied together to produce a total product.
+
+
+\end{enumerate}
+
+3) These are the commonly used names of parameters.  Next to each of the probability distributions above, write down the relevant parameters.  Some may be used for more than one distribution, others may not be relevant to any.
+
+\framebox{Dispersion} {Rate} {Standard Deviation (sd)} {rate} {size} {probability (prob)} {degrees of freedom (df)} {mean} 
+

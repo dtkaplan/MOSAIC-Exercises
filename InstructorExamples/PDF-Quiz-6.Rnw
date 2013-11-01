@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage[top=.5in,bottom=.5in,left=1.5in,right=1.5in]{geometry}
+\usepackage{rotating}
+\usepackage{enumerate}
+\pagestyle{empty}
+\usepackage{multicol}
+\columnseprule=0.4pt
+ 
+% For the package
+\newcommand{\WritingSpace}[2]{\vspace*{\WritingSpaceScaling#1#2}} 
+% e.g. \WritingSpace{2cm}
+\newcommand{\WritingSpaceScaling}{1}
+% For universal scaling
+
+
+\begin{document}
+
+
+\hfill\parbox{3.5in}{\raggedleft Student Name: \rule{2in}{1pt}  }
+
+\bigskip
+
+\bigskip
+
+\bigskip
+
+\begin{centering}
+{\Large \sffamily Math 155 --- Intro. to Statistical Modeling --- Prof. Kaplan}\\
+\bigskip
+
+{\Large \sffamily \bfseries{Quiz 5: Nov. 1, 2013}}\\
+\bigskip
+\end{centering}
+
+<<include=FALSE>>=
+require(RCurl)
+@
+
+\paragraph{Problem 1.} 
+\Sexpr{knit_child(text=getURL('http://dtkaplan.github.io/MOSAIC-Exercises/Statistics/Rnw-Latex/prob-quiz-001.Rnw'))}
+
+
+
+
+
+
+\end{document}
+
+
